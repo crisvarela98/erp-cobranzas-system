@@ -1,0 +1,106 @@
+erp-cobranzas-system
+│
+├── README.md
+├── LICENSE
+├── .gitignore
+├── package.json
+├── .env.example
+│
+├── backend
+│   │
+│   ├── src
+│   │   │
+│   │   ├── app.js
+│   │   │
+│   │   ├── config
+│   │   │   ├── database.js
+│   │   │   ├── server.js
+│   │   │   └── environment.js
+│   │   │
+│   │   ├── database
+│   │   │   ├── migrations
+│   │   │   ├── seeds
+│   │   │   └── schema
+│   │   │       ├── users.sql
+│   │   │       ├── companies.sql
+│   │   │       ├── documents.sql
+│   │   │       └── payments.sql
+│   │   │
+│   │   ├── modules
+│   │   │   ├── auth
+│   │   │   ├── users
+│   │   │   ├── companies
+│   │   │   ├── documents
+│   │   │   ├── invoices
+│   │   │   ├── payments
+│   │   │   ├── collections
+│   │   │   ├── tracking
+│   │   │   └── search
+│   │   │
+│   │   ├── middleware
+│   │   │   ├── auth.middleware.js
+│   │   │   ├── roles.middleware.js
+│   │   │   └── error.middleware.js
+│   │   │
+│   │   └── utils
+│   │       ├── trackingGenerator.js
+│   │       ├── numberGenerator.js
+│   │       └── logger.js
+│   │
+│   └── tests
+│       ├── auth.test.js
+│       └── documents.test.js
+│
+├── frontend
+│   │
+│   ├── index.html
+│   ├── login.html
+│   ├── register.html
+│   │
+│   ├── assets
+│   │   ├── css
+│   │   │   ├── main.css
+│   │   │   ├── dashboard.css
+│   │   │   └── forms.css
+│   │   │
+│   │   ├── js
+│   │   │   ├── api.js
+│   │   │   ├── auth.js
+│   │   │   ├── dashboard.js
+│   │   │   ├── documents.js
+│   │   │   ├── payments.js
+│   │   │   └── search.js
+│   │   │
+│   │   └── img
+│   │
+│   ├── components
+│   │   ├── navbar.html
+│   │   ├── sidebar.html
+│   │   └── footer.html
+│   │
+│   ├── proveedor
+│   │   ├── dashboard.html
+│   │   ├── clientes.html
+│   │   ├── pedidos.html
+│   │   ├── remitos.html
+│   │   ├── facturas.html
+│   │   ├── cobranzas.html
+│   │   └── reportes.html
+│   │
+│   ├── cliente
+│   │   ├── dashboard.html
+│   │   ├── pedidos.html
+│   │   ├── facturas.html
+│   │   ├── pagos.html
+│   │   └── recibos.html
+│   │
+│   └── admin
+│       ├── dashboard.html
+│       ├── usuarios.html
+│       ├── empresas.html
+│       └── configuracion.html
+│
+└── docs
+    ├── arquitectura.md
+    ├── base_datos.md
+    └── flujo_documentos.md
